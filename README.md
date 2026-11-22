@@ -1,27 +1,30 @@
 # Parliamentum: Seats of Power
 
-Static HTML political strategy game. Multiplayer uses the configured Supabase project.
+Static HTML political strategy game with multiplayer (Supabase).
 
-## Deploy on Vercel
+**Repository:** https://github.com/siddchan3rd-lang/parliamentum-world
 
-1. Go to [vercel.com/new](https://vercel.com/new)
-2. Import this GitHub repository: `siddchan3rd-lang/parliamentum-world`
-3. Framework Preset: **Other** (or leave blank)
-4. Build Command: leave empty
-5. Output Directory: leave empty (or `.`)
-6. Install Command: leave empty
-7. Deploy
+## Deploy on Vercel yourself
 
-The site is pure static files (`index.html`). No build step required.
+1. Open [vercel.com/new](https://vercel.com/new)
+2. Import **`siddchan3rd-lang/parliamentum-world`**
+3. Framework Preset: **Other**
+4. Leave **Build Command**, **Install Command**, and **Output Directory** empty
+5. Click **Deploy**
 
-## Local play
+No build step is required.
 
-Open `index.html` in a browser, or serve the folder with any static server.
+## Files
+
+- `index.html` — main game entry (must contain the full game or load `game1.js`–`game3.js`)
+- `vercel.json` — static hosting headers
+
+If the large game script is still missing after clone, replace `index.html` with your original single-file game (the one you shared as the attachment). Keep `vercel.json`.
 
 ## Supabase
 
-The game already points at:
+Configured for:
 
 `https://wbyjqdwmmtznlobsfhck.supabase.co`
 
-For username/password signup with synthetic `@parliamentum.invalid` emails, disable **Confirm email** under Authentication → Providers → Email in the Supabase dashboard.
+For username-only signup (`user@parliamentum.invalid`), disable **Confirm email** in Supabase → Authentication → Providers → Email.
